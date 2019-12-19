@@ -12,8 +12,13 @@ import hours from './modules/hours'
 import commissions from './modules/commissions'
 import department from './modules/department'
 import semester from './modules/semester'
+import teacher from './modules/teachers'
 import rooms from './modules/rooms'
+import student from './modules/student'
 import classes from './modules/classes'
+import students from './modules/student'
+import users from './modules/users'
+import subgroups from './modules/subgroups'
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -39,6 +44,11 @@ hours(app)
 commissions(app)
 department(app)
 semester(app)
+teacher(app)
 rooms(app)
 classes(app)
+students(app)
+users(app)
+subgroups(app)
+
 app.listen(port)
